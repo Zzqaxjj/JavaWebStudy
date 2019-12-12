@@ -1,5 +1,7 @@
 package com.test;
 
+import org.junit.Test;
+
 /**
  * test
  *
@@ -7,7 +9,10 @@ package com.test;
  * @create 2019-12-12 20:02
  */
 public class test {
-
-
+    @Test
+    public void test1(){
+        System.out.println("hello world");
+    }
 }
+
 
