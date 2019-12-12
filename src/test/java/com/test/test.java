@@ -9,9 +9,5 @@ package com.test;
 public class test {
 
 
-    @Test
-    public void test1{
-
-    }
 }
 

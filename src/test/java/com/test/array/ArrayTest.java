@@ -5,5 +5,4 @@ package com.test.array;
  * @create 2019-12-12 20:08
  */
 public class ArrayTest {
-    @Test
 }
