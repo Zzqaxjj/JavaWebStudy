@@ -20,26 +20,39 @@ public class CheckUtils {
     }
     /* 判断数组是否为空 */
     public static boolean isEmpty(Object[] arr) {
-        boolean flag = false;
-
-        return flag;
+        if(arr != null && arr.length != 0){
+            return false;
+        }
+        return true;
     }
     /* 判断 str1 字符串是否相等，相等则返回 true，否则返回 false。当其中⼀个是 null 时返回false */
     public static boolean equals(String str1, String str2) {
-        boolean flag = false;
-
-        return flag;
+        if (str1 == null || str2 == null) {
+            return false;
+        }
+        return str1.equals(str2);
     }
     /* 判断 n1 和 n2 的值是否相等，相等则返回 true，否则返回 false。当其中⼀个是 null 时返回 false */
     public static boolean equals(Integer n1, Integer n2) {
-        boolean flag = false;
-
-        return flag;
+        if (n1 == null || n2 == null) {
+            return false;
+        }
+        return n1==n2;
     }
     @Test
     public void test1() {
         String str = "dfsajhfhdsjhfj";
         boolean flag = isAnyEmpty(str);
         System.out.println(flag);
+    }
+
+    @Test
+    public void test2() {
+        String str1 = "null";
+        String str2 = "a";
+        int n1 = 5;
+        int n2 = 5;
+        System.out.println(equals(str1,str2));
+        System.out.println(equals(n1,n2));
     }
 }
